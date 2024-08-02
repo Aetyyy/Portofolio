@@ -74,7 +74,7 @@ export default function Navbar() {
         </div>
       </div>
       <div
-        className={`fixed inset-y-0 right-0 z-55 w-64 bg-white shadow-xl transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-y-0 right-0 bottom-1 top-2 z-55 w-64 bg-white border border-white/80 bg-opacity-60 backdrop-blur-2xl backdrop-saturate-200 shadow-xl transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 rounded-l-lg ease-in-out :hidden`}
       >
         <div className="p-6">
@@ -97,7 +97,7 @@ export default function Navbar() {
               ></path>
             </svg>
           </button>
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-8 space-y-6">
             {items.map((i) => (
               <li key={i.url} className="relative group">
                 <Link
